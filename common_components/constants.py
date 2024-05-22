@@ -4,8 +4,6 @@ MLX_PASSWORD_FIELD = 'password'
 MLX_PASSWORD = 'PASSWORD'
 MLX_EMAIL_FIELD = 'email'
 MLX_EMAIL = 'EMAIL'
-MLX_PASSWORD_DEFAULT = 'Kvdg_SMD*_^'
-MLX_EMAIL_DEFAULT = 'mlxemail@aito.com'
 MLX_TOKEN = 'token'
 MLX_HEADERS = 'headers'
 MLX_DATA = 'data'
@@ -16,7 +14,6 @@ LOG_FOLDER = 'logs'
 MLX_BASE = "https://api.multilogin.com"
 MLX_LAUNCHER = "https://launcher.mlx.yt:45001/api/v1"
 LOCALHOST = "http://127.0.0.1"
-FOLDER_ID_DEFAULT = "a45cb43e-5d7c-4b77-9cbd-3382a2e4424e"
 MLX_FOLDER_ID = 'MLX_FOLDER_ID'
 
 MLX_SIGNIN_URL = "{mlx_base}/user/signin"
@@ -29,7 +26,6 @@ MLX_PROFILE_SCREEN_RESOLUTION_URL = "/fpb/resolutions"
 
 # Multilogin X profile data
 MLX_PROFILE_ID = "MLX_PROFILE_ID"
-PROFILE_ID_DEFAULT = "idssdkflj-ad-fdf-a-43-45-d-f"
 MLX_PROFILE_DATA_OS_TYPE_WINDOWS = "windows"
 MLX_PROFILE_DATA_BROWSER_TYPE = "browser_type"
 MLX_PROFILE_DATA_FOLDER_ID = "folder_id"
@@ -143,3 +139,8 @@ WILDCARD_STRING = "//a[starts-with(@href,'{0}') or starts-with(@href,'https://{0
 WILDCARD_STRING_SEARCH = "//*[@id='search']//a[starts-with(@href,'{0}') or starts-with(@href,'https://{0}') or starts-with(@href,'http://{0}') or starts-with(@href,'https://www.{0}') or starts-with(@href,'http://www.{0}') or contains(@href,'http%3A%2F%2Fwww.{0}') or contains(@href,'http%3A%2F%2F{0}') or contains(@href,'https%3A%2F%2Fwww.{0}') or contains(@href,'https%3A%2F%2F{0}') or contains(text(), '{0}')]"
 WILDCARD_STRING_BOTSTUFF = "//*[@id='botstuff']//a[starts-with(@href,'{0}') or starts-with(@href,'https://{0}') or starts-with(@href,'http://{0}') or starts-with(@href,'https://www.{0}') or starts-with(@href,'http://www.{0}') or contains(@href,'http%3A%2F%2Fwww.{0}') or contains(@href,'http%3A%2F%2F{0}') or contains(@href,'https%3A%2F%2Fwww.{0}') or contains(@href,'https%3A%2F%2F{0}') or contains(text(), '{0}')]"
 
+
+PROFILE_ID_DEFAULT = "idssdkflj-ad-fdf-a-43-45-d-f"
+FOLDER_ID_DEFAULT = "a45cb43e-5d7c-4b77-9cbd-3382a2e4424e"
+MLX_EMAIL_DEFAULT = 'mlxemail@aito.com'
+MLX_PASSWORD_DEFAULT = 'Kvdg_SMD*_^'
