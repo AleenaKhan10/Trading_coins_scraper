@@ -19,8 +19,8 @@ class MLXBrowser:
 
     def sign_in(self):
         payload = {
-            constants.MLX_EMAIL_FIELD: "aleenakhanraees40@gmail.com",
-            constants.MLX_PASSWORD_FIELD: hashlib.md5("AleenaKhan_0786*".encode()).hexdigest()
+            constants.MLX_EMAIL_FIELD: utilities.get_config_value(constants.MLX_EMAIL_FIELD, constants.MLX_EMAIL_DEFAULT),
+            constants.MLX_PASSWORD_FIELD: hashlib.md5(utilities.get_config_value(constants.MLX_PASSWORD_FIELD, constants.MLX_PASSWORD_DEFAULT).encode()).hexdigest()
             }
         
         
@@ -51,8 +51,8 @@ class MLXBrowser:
         self.token = self.sign_in()
         profile_launcher_url = constants.MLX_LAUNCHER
         url = profile_launcher_url + constants.MLX_START_PROFILE_URL.format(
-            folder_id = "1b5aad0b-c179-45cb-bb11-defde2826b43",
-            profile_id = "56a87e20-51b5-4471-93a4-c0acc2db7c8d"
+            folder_id = utilities.get_config_value(constants.MLX_FOLDER_ID, constants.FOLDER_ID_DEFAULT),
+            profile_id = utilities.get_config_value(constants.MLX_PROFILE_ID, constants.PROFILE_ID_DEFAULT)
             )
 
         headers = {

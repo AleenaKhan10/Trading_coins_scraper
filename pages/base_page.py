@@ -8,7 +8,6 @@ from pathlib import Path
 from typing import List, Tuple, Optional, Union
 
 # Third party imports
-from PIL import Image
 import pyautogui
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys

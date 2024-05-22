@@ -89,13 +89,14 @@ def focus_browser(driver):
 def create_or_append_csv_listing(list):
     file_exists = False
     try:
-        with open('data.csv', 'x', newline='') as file:
+        with open('data.csv', 'x', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
             writer.writerow(list)
     except FileExistsError:
         file_exists = True
         
     if file_exists:
-        with open('data.csv', 'a', newline='') as file:
+        with open('data.csv', 'a', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
             writer.writerow(list)
+
